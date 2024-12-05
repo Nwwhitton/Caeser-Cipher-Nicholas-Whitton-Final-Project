@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaeserCipher</title>
+    <script src="CaeserCipher.js" defer></script>
+</head>
+<body>
+    <h3 style="text-align: center;">Encrypter/Decrypter</h3>
+    <form id="myForm" style="text-align: center; padding: 25px;">
+        <label style="font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive; font-size: 25px;">Text to Encrypt/Decrypt </label><br>
+        <input type="text" id="Message" style="height: 25px;" required> <br><br>
+ 
+        <label>Shift By:</label>
+        <input type="number" id="ShiftBy" min="0"  max="26" required>
+ 
+        <select id="RorL" required>
+            <option value="Right">Right</option>
+            <option value="Left">Left</option>
+        </select>
+<br>
+        <select id="EorD" style="height: 25px; width: 150px;" required>
+            <option value="Encrypt">Encrypt</option>
+            <option value="Decrypt">Decrypt</option>
+        </select>
+
+        <button type="submit">Encrypt/Decrypt</button>
+ 
+    </form>
+    <h4 style="text-align: center;">Output</h4>
+    <p id="display" style="text-align: center;"></p>
+</body>
+</html>
